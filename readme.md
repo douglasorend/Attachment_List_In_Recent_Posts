@@ -1,28 +1,30 @@
-[hr]
-[center][color=red][size=16pt][b]ATTACHMENT LIST IN RECENT POSTS v1.7[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4090]Link to Mod[/url]
-[/center]
-[hr]
+--------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
+# ATTACHMENT LIST IN RECENT POSTS v1.7
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4090)
+
+--------
+
+## Introduction
 This mod adds a simple list of attachments to any post that has attachments, if the user can view attachments in the board that the post is in.
 
-[color=blue][b][size=12pt][u]Uninstalling Error for v1.0[/u][/size][/b][/color]
- If you have installed [b]VERSION 1.0[/b], you will have difficulty uninstalling this mod and I apologize for this!!!  Please replace your v1.0 mod with the attached mod in [url=http://www.simplemachines.org/community/index.php?topic=544046.msg3863987#msg3863987]this post[/url].  This will resolve the uninstall issue....
+## Uninstalling Error for v1.0
+ If you have installed **VERSION 1.0**, you will have difficulty uninstalling this mod and I apologize for this!!!  Please replace your v1.0 mod with the attached mod in [this post](http://www.simplemachines.org/community/index.php?topic=544046.msg3863987#msg3863987).  This will resolve the uninstall issue....
 
-[color=blue][b][size=12pt][u]Related Discussion[/u][/size][/b][/color]
-o [url=http://www.simplemachines.org/community/index.php?topic=425338.0]Show attachments (or links) in Recent Posts like templates.[/url]
+## Related Discussion
+o [Show attachments (or links) in Recent Posts like templates.](http://www.simplemachines.org/community/index.php?topic=425338.0)
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+## Compatibility Notes
 This mod was tested on SMF 2.0.11 and SMF 2.1 Beta 2, but should work on SMF 2.0 and up.  SMF 1.x is not and will not be supported.  
 
-[color=blue][b][size=12pt][u]Translators[/u][/size][/b][/color]
-o Spanish Latin: [url=http://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee [BC][/url]
+## Translators
+o Spanish Latin: [Rock Lee [BC]](http://www.simplemachines.org/community/index.php?action=profile;u=322597)
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=665.msg982#msg982]XPtsp.com[/url].
+## Changelog
+The changelog can be seen at [XPtsp.com](
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+**## License**
 [quote]Copyright (c) 2016 - 2018, Douglas Orend
 All rights reserved.
 
