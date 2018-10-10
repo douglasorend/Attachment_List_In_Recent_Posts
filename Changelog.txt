@@ -1,3 +1,8 @@
+v1.5 - February 10th, 2018
+o No functionality changes.
+o Added [b]LICENSE[/b] file to satisfy licensing requirements.
+o Added translators to mod documentation file [b]readme.txt[/b].
+
 v1.4 - January 14th, 2018
 o Fixed security report that allowed unapproved attachments to be listed.
 

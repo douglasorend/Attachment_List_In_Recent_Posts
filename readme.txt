@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]ATTACHMENT LIST IN RECENT POSTS v1.4[/b][/size][/color]
+[center][color=red][size=16pt][b]ATTACHMENT LIST IN RECENT POSTS v1.5[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4090]Link to Mod[/url]
 [/center]
 [hr]
@@ -15,6 +15,9 @@ o [url=http://www.simplemachines.org/community/index.php?topic=425338.0]Show att
 
 [color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
 This mod was tested on SMF 2.0.11 and SMF 2.1 Beta 2, but should work on SMF 2.0 and up.  SMF 1.x is not and will not be supported.  
+
+[color=blue][b][size=12pt][u]Translators[/u][/size][/b][/color]
+o Spanish Latin: [url=http://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee [BC][/url]
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
 The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=665.msg982#msg982]XPtsp.com[/url].
