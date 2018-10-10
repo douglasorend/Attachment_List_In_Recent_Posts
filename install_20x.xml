@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:ATIRP</id>
+<name>Attachment List In Recent Posts</name>
+<version>1.0</version>
+
+<file name="$sourcedir/Recent.php">
+	<operation>
+		<search position="before"><![CDATA[$row['poster_time'] + $modSettings['edit_disable_time'] * 60 >= time()),]]></search>
+		<add><![CDATA[
+			'attachments' => array(),]]></add>
+	</operation>
+	<operation>
+		<search position="after"><![CDATA[// There might be - and are - different permissions between any and own.]]></search>
+		<add><![CDATA[// Get any attachments of these posts.
+	if (!empty($modSettings['attachmentEnable']) && !empty($context['posts']))
+	{
+		$posts = array_keys($context['posts']);
+		$query = $smcFunc['db_query']('', '
+			SELECT
+				a.id_attach, a.id_msg, a.filename, b.id_board
+			FROM {db_prefix}attachments AS a
+				INNER JOIN {db_prefix}messages AS m ON (m.id_msg = a.id_msg)
+				INNER JOIN {db_prefix}boards AS b ON (b.id_board = m.id_board)
+			WHERE a.id_msg IN ({array_int:posts})
+				AND a.attachment_type = 0
+				AND a.id_member = 0',
+			array(
+				'posts' => $posts,
+			)
+		);
+		$view_attach = array();
+		while ($row = $smcFunc['db_fetch_assoc']($query))
+		{
+			// Do we have permission to view attachments in this board:
+			if (!isset($view_attach[$row['id_board']]))
+				$view_attach[$row['id_board']] = allowedTo('view_attachments', $row['id_board']);
+			if (empty($view_attach[$row['id_board']]))
+				continue;
+
+			// Capture the attachment:
+			$context['posts'][$row['id_msg']]['attachments'][] = array(
+				'filename' => $row['filename'],
+				'href' => $scripturl . '?action=dlattach;topic=' . $context['posts'][$row['id_msg']]['topic'] . '.0;attach=' . $row['id_attach'],
+			);
+		}
+		$smcFunc['db_free_result']($query);
+	}
+
+	]]></add>
+	</operation>
+</file>
+<file name="$themedir/Recent.template.php">
+	<operation>
+		<search position="replace"><![CDATA[</ul>
+				</div>';
+		}
+		echo '
+				<span class="botslice clear"><span></span></span>
+			</div>';]]></search>
+		<add><![CDATA[</ul>';
+
+		if (!empty($post['attachments']))
+		{
+			echo '
+					<div class="content smalltext"><p style="vertical-align: bottom; ">' , $txt['airp_attachments'], ': ';
+			$first = true;
+			foreach ($post['attachments'] as $attach)
+			{
+				if (!$first)
+					echo ', ';
+				echo '<a href="', $attach['href'], '">', $attach['filename'], '</a>';
+			}
+
+			echo '</p></div>';
+		}
+		echo '
+				</div>
+				<span class="botslice clear"><span></span></span>
+			</div>';]]></add>
+	</operation>
+</file>
+</modification>
