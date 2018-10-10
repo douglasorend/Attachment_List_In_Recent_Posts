@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]ATTACHMENT LIST IN RECENT POSTS v1.0[/b][/size][/color]
+[center][color=red][size=16pt][b]ATTACHMENT LIST IN RECENT POSTS v1.1[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4090]Link to Mod[/url]
 [/center]
 [hr]
@@ -7,11 +7,14 @@
 [color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
 This mod adds a simple list of attachments to any post that has attachments, if the user can view attachments in the board that the post is in.
 
+[color=blue][b][size=12pt][u]Uninstalling Error for v1.0[/u][/size][/b][/color]
+ If you have installed [b]VERSION 1.0[/b], you will have difficulty uninstalling this mod and I apologize for this!!!  Please replace your v1.0 mod with the attached mod in [url=http://www.simplemachines.org/community/index.php?topic=544046.msg3863987#msg3863987]this post[/url].  This will resolve the uninstall issue....
+
 [color=blue][b][size=12pt][u]Related Discussion[/u][/size][/b][/color]
 o [url=http://www.simplemachines.org/community/index.php?topic=425338.0]Show attachments (or links) in Recent Posts like templates.[/url]
 
 [color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
-This mod was tested on SMF 2.0.11, but should work on SMF 2.0 and up.  SMF 1.x is not and will not be supported.  
+This mod was tested on SMF 2.0.11 and SMF 2.1 Beta 2, but should work on SMF 2.0 and up.  SMF 1.x is not and will not be supported.  
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
 The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=665.msg982#msg982]XPtsp.com[/url].
