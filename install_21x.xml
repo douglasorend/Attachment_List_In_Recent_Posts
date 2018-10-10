@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>Dougiefresh:ATIRP</id>
 <name>Attachment List In Recent Posts</name>
-<version>1.2</version>
+<version>1.3</version>
 
 <file name="$sourcedir/Recent.php">
 	<operation>
