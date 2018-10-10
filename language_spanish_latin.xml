@@ -5,11 +5,19 @@
 <name>Attachment List In Recent Posts</name>
 <version>1.2</version>
 
-<file name="$languagedir/index.english.php">
+<file name="$languagedir/index.spanish_latin.php" error="skip">
 	<operation>
 		<search position="end" />
 		<add><![CDATA[
-$txt['airp_attachments'] = 'Attachments';
+$txt['airp_attachments'] = 'Archivo(s) Adjunto(s)';
+]]></add>
+	</operation>
+</file>
+<file name="$languagedir/index.spanish_latin-utf8.php" error="skip">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['airp_attachments'] = 'Archivo(s) Adjunto(s)';
 ]]></add>
 	</operation>
 </file>
