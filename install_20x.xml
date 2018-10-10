@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>Dougiefresh:ATIRP</id>
 <name>Attachment List In Recent Posts</name>
-<version>1.5</version>
+<version>1.6</version>
 
 <file name="$sourcedir/Recent.php">
 	<operation>
@@ -55,32 +55,27 @@
 </file>
 <file name="$themedir/Recent.template.php">
 	<operation>
-		<search position="replace"><![CDATA[</ul>
-				</div>';
-
-		echo '
-				<span class="botslice clear"><span></span></span>
-			</div>';]]></search>
-		<add><![CDATA[</ul>';
-
-		if (!empty($post['attachments']))
+		<search position="after"><![CDATA[if ($post['can_reply'] || $post['can_mark_notify'] || $post['can_delete'])]]></search>
+		<add><![CDATA[if (!empty($post['attachments']))
 		{
 			echo '
-					<div class="content smalltext"><p style="vertical-align: bottom; ">' , $txt['airp_attachments'], ': ';
+				<div class="content smalltext">
+					<p style="vertical-align: bottom; ">' , $txt['airp_attachments'], ': ';
 			$first = true;
 			foreach ($post['attachments'] as $attach)
 			{
 				if (!$first)
 					echo ', ';
-				echo '<a href="', $attach['href'], '">', $attach['filename'], '</a>';
+				echo '
+						<a href="', $attach['href'], '">', $attach['filename'], '</a>';
 			}
 
-			echo '</p></div>';
+			echo '
+					</p>
+				</div>';
 		}
-		echo '
-				</div>
-				<span class="botslice clear"><span></span></span>
-			</div>';]]></add>
+
+		]]></add>
 	</operation>
 </file>
 </modification>
